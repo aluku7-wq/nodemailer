@@ -4,6 +4,12 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 dotenv.config();
 
 port = process.env.PORT;
