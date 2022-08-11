@@ -46,9 +46,9 @@ app.get("/", (req, res) => {
 
   transporter.sendMail(mailOptions, function (err, info) {
     if (err) {
-      res.send(err);
+      res.json(err);
     } else {
-      res.send(info);
+      res.json(info);
     }
   });
 });
