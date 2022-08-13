@@ -24,13 +24,13 @@ router.post("/email", async (req, res) => {
     subject: `job hirer`,
     html: `
         <h2><u>NAME</u></h2>
-        <h3>aluku godrick</h3>
+        <h3>${req.body.name}</h3>
         <br/>
         <h2><u>EMAIL</u></h2>
-        <h3> foreveraluku@gmail.com</h3>
+        <h3> ${req.body.email}</h3>
         <br/>
         <h2><u>MESSAGE</u></h2>
-        <h3> welcome aluku how can i help youwelcome aluku how can i help youwelcome aluku how can i help you</h3>
+        <h3> ${req.body.message}</h3>
 
     
     `,
