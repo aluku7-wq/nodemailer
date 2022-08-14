@@ -47,7 +47,7 @@ router.post("/email", async (req, res) => {
     if (err) {
       res.json(err);
     } else {
-      res.json(req.body);
+      res.json(info);
     }
   });
 });
